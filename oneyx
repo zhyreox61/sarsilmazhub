@@ -1,0 +1,3085 @@
+-- This file was generated at discord.gg/syncrypt
+
+return {
+    protos = {
+        [0] = {
+            strings = {
+                [0] = "task",
+                [1] = "wait",
+                [2] = "game",
+                [3] = "IsLoaded",
+                [4] = "Font", -- x3
+                [5] = "RobotoMono",
+                [6] = "Validate",
+                [7] = "Junkie",
+                [8] = "Error",
+                [9] = "Color3",
+                [10] = "fromRGB", -- x15
+                [11] = "Notify",
+                [12] = "spawn",
+                [13] = "GetService", -- x6
+                [14] = "TweenService",
+                [15] = "getgenv",
+                [16] = "OnyxUI", -- x5
+                [17] = "Field",
+                [18] = "KeylessSubtitle",
+                [19] = "No key needed — you're good to go.",
+                [20] = "Appearance",
+                [21] = "Success",
+                [22] = "FileName",
+                [23] = "OnyxKey",
+                [24] = "AutoLoad",
+                [25] = "PrimaryText",
+                [26] = "Warning",
+                [27] = "Enum",
+                [28] = "Players",
+                [29] = "gethui",
+                [30] = "IsJunkieMode",
+                [31] = "Notifications",
+                [32] = "Workspace",
+                [33] = "HttpService",
+                [34] = "Link",
+                [35] = "", -- x3
+                [36] = "Icon",
+                [37] = "Shop",
+                [38] = "KeylessUI",
+                [39] = "Options",
+                [40] = "OnVerify",
+                [41] = "OnSuccess",
+                [42] = "OnFail",
+                [43] = "OnClose",
+                [44] = "Callbacks",
+                [45] = "Enabled",
+                [46] = "Title", -- x2
+                [47] = "Get premium access",
+                [48] = "Subtitle", -- x2
+                [49] = "Instant delivery · 24/7 support",
+                [50] = "ButtonText",
+                [51] = "Buy",
+                [52] = "cloneref",
+                [53] = "Card",
+                [54] = "AccentDeep",
+                [55] = "OnyxUILoaded",
+                [56] = "LaunchJunkie",
+                [57] = "Text",
+                [58] = "Storage",
+                [59] = "Keyless",
+                [60] = "TextFaint",
+                [61] = "FieldHover",
+                [62] = "FindFirstChild", -- x2
+                [63] = "OnyxKeyWindow",
+                [64] = "GothamMedium",
+                [65] = "GothamBold",
+                [66] = "GetKey",
+                [67] = "TextDim",
+                [68] = "OnyxClosed",
+                [69] = "Primary",
+                [70] = "Accent",
+                [71] = "GetSavedKey",
+                [72] = "ClearSavedKey",
+                [73] = "Destroy",
+                [74] = "OnyxKeylessWindow",
+                [75] = "Onyx", -- x2
+                [76] = "Enter your key to continue",
+                [77] = "KeylessTitle",
+                [78] = "SessionGeneration",
+                [79] = "GuiService",
+                [80] = "UserInputService",
+                [81] = "Scrim",
+                [82] = "Cleanups",
+                [83] = "CurrentWindow",
+                [84] = "WindowGeneration",
+                [85] = "Launch",
+            },
+            numbers = {
+                [0] = 220,
+                [1] = 180,
+                [2] = 96,
+                [3] = 196,
+                [4] = 130,
+                [5] = 32, -- x2
+                [6] = 37, -- x3
+                [7] = 86,
+                [8] = 0, -- x5
+                [9] = 240, -- x4
+                [10] = 243, -- x2
+                [11] = 150, -- x2
+                [12] = 158,
+                [13] = 24, -- x2
+                [14] = 27,
+                [15] = 52, -- x2
+                [16] = 59,
+                [17] = 104, -- x2
+                [18] = 112,
+                [19] = 43,
+                [20] = 16850,
+                [21] = 45,
+                [22] = 430,
+                [23] = 224,
+                [24] = 110, -- x2
+                [25] = 68,
+                [26] = 431,
+                [27] = 303,
+            },
+            booleans = {
+                [0] = true, -- x3
+                [1] = false, -- x3
+            },
+            imports = {
+                [0] = { import = { 0 } }, -- x2
+                [1] = { import = { 3 } }, -- x6
+                [2] = { import = { 11 } }, -- x14
+                [3] = { import = { 31 } }, -- x7
+                [4] = { import = { 46 } }, -- x3
+                [5] = { import = { 53 } },
+                [6] = { import = { 81 } },
+            },
+            closures = {
+                [0] = { closure = 1 },
+                [1] = { closure = 2 },
+                [2] = { closure = 3 },
+                [3] = { closure = 4 },
+                [4] = { closure = 5 },
+                [5] = { closure = 6 },
+                [6] = { closure = 7 },
+                [7] = { closure = 8 },
+                [8] = { closure = 9 },
+                [9] = { closure = 10 },
+                [10] = { closure = 11 },
+                [11] = { closure = 12 },
+                [12] = { closure = 13 },
+                [13] = { closure = 14 },
+                [14] = { closure = 15 },
+                [15] = { closure = 16 },
+                [16] = { closure = 17 },
+                [17] = { closure = 18 },
+                [18] = { closure = 19 },
+                [19] = { closure = 20 },
+                [20] = { closure = 21 },
+                [21] = { closure = 22 },
+                [22] = { closure = 23 },
+                [23] = { closure = 24 },
+                [24] = { closure = 25 },
+                [25] = { closure = 26 },
+                [26] = { closure = 27 },
+                [27] = { closure = 28 },
+                [28] = { closure = 29 },
+                [29] = { closure = 30 },
+                [30] = { closure = 31 },
+                [31] = { closure = 32 },
+                [32] = { closure = 33 },
+                [33] = { closure = 34 },
+                [34] = { closure = 35 },
+                [35] = { closure = 36 },
+                [36] = { closure = 37 },
+                [37] = { closure = 38 },
+                [38] = { closure = 39 },
+                [39] = { closure = 40 },
+                [40] = { closure = 41 },
+                [41] = { closure = 42 },
+                [42] = { closure = 43 },
+                [43] = { closure = 44 },
+                [44] = { closure = 45 },
+            },
+        },
+        [1] = {
+            parent = 0,
+            closures = {
+                [0] = { closure = 46 },
+            },
+        },
+        [2] = {
+            parent = 0,
+            strings = {
+                [0] = "Instance",
+                [1] = "new", -- x10
+                [2] = "TextLabel", -- x2
+                [3] = "tostring",
+                [4] = "tick",
+                [5] = "math",
+                [6] = "clamp",
+                [7] = "", -- x2
+                [8] = "Success", -- x2
+                [9] = "success",
+                [10] = "Error",
+                [11] = "error",
+                [12] = "fromOffset", -- x4
+                [13] = "Size", -- x5
+                [14] = "UDim2",
+                [15] = "Name",
+                [16] = "OnyxNotif",
+                [17] = "ResetOnSpawn",
+                [18] = "IgnoreGuiInset",
+                [19] = "Font", -- x2
+                [20] = "TextSize", -- x2
+                [21] = "Text", -- x4
+                [22] = "TextColor3", -- x2
+                [23] = "info", -- x2
+                [24] = "Accent", -- x3
+                [25] = "discord",
+                [26] = "copy",
+                [27] = "TextDim",
+                [28] = "Notifications", -- x4
+                [29] = "Vector2",
+                [30] = "AnchorPoint",
+                [31] = "Frame", -- x2
+                [32] = "Parent", -- x6
+                [33] = "Left", -- x2
+                [34] = "Enum",
+                [35] = "TextYAlignment", -- x2
+                [36] = "Center",
+                [37] = "TextTruncate", -- x4
+                [38] = "insert",
+                [39] = "id",
+                [40] = "key", -- x2
+                [41] = "gui", -- x3
+                [42] = "card",
+                [43] = "height",
+                [44] = "Connect",
+                [45] = "table",
+                [46] = "concat",
+                [47] = "TextXAlignment", -- x3
+                [48] = "BackgroundTransparency", -- x3
+                [49] = "AtEnd", -- x2
+                [50] = "ZIndexBehavior", -- x2
+                [51] = "Sibling",
+                [52] = "remove",
+                [53] = "Position", -- x4
+                [54] = "Hairline",
+                [55] = "X",
+                [56] = "BackgroundColor3", -- x2
+                [57] = "DisplayOrder",
+                [58] = "task",
+                [59] = "delay",
+                [60] = "Warning",
+                [61] = "warning",
+                [62] = "random",
+                [63] = "ScreenGui",
+                [64] = "close",
+                [65] = "BorderSizePixel", -- x2
+                [66] = "fromScale",
+                [67] = "Card",
+                [68] = "TextButton",
+            },
+            numbers = {
+                [0] = 56,
+                [1] = 320,
+                [2] = 0.5, -- x3
+                [3] = 0, -- x13
+                [4] = 1, -- x17
+                [5] = -16, -- x2
+                [6] = 18, -- x2
+                [7] = 10,
+                [8] = 13,
+                [9] = 9,
+                [10] = 14, -- x2
+                [11] = 4, -- x3
+                [12] = 40,
+                [13] = 220,
+                [14] = 6, -- x3
+                [15] = -1,
+                [16] = 1000001,
+                [17] = 100,
+                [18] = 16,
+                [19] = 2,
+                [20] = 5,
+                [21] = 7,
+                [22] = 3,
+            },
+            booleans = {
+                [0] = false, -- x3
+                [1] = true, -- x2
+            },
+            imports = {
+                [0] = { import = { 0 } }, -- x6
+                [1] = { import = { 5 } }, -- x5
+                [2] = { import = { 7 } },
+                [3] = { import = { 9 } },
+                [4] = { import = { 21 } }, -- x8
+                [5] = { import = { 46 } }, -- x2
+                [6] = { import = { 53 } }, -- x6
+                [7] = { import = { 66 } }, -- x3
+                [8] = { import = { 74 } },
+                [9] = { import = { 2 } },
+                [10] = { import = { 87 } },
+            },
+            closures = {
+                [0] = { closure = 47 },
+                [1] = { closure = 48 },
+            },
+            byte_sequences = {
+                [0] = { hex = "00" },
+            },
+        },
+        [3] = {
+            parent = 0,
+            strings = {
+                [0] = "pcall",
+                [1] = "GetAsset",
+                [2] = "Image",
+                [3] = "ImageRectSize", -- x2
+                [4] = "ImageRectOffset", -- x2
+                [5] = "ImageTransparency",
+                [6] = "ImageColor3",
+            },
+            numbers = {
+                [0] = 24,
+                [1] = 0,
+            },
+            booleans = {
+                [0] = true,
+                [1] = false,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+        },
+        [4] = {
+            parent = 0,
+            strings = {
+                [0] = "Size",
+                [1] = "BackgroundTransparency",
+                [2] = "ImageColor3",
+                [3] = "Enum",
+                [4] = "ScaleType", -- x2
+                [5] = "Fit",
+                [6] = "Instance",
+                [7] = "new",
+                [8] = "ImageLabel",
+                [9] = "UDim2",
+                [10] = "Text",
+                [11] = "fromOffset",
+            },
+            numbers = {
+                [0] = 1, -- x2
+                [1] = 15807,
+            },
+            imports = {
+                [0] = { import = { 5 } },
+                [1] = { import = { 9 } },
+                [2] = { import = { 13 } },
+            },
+        },
+        [5] = {
+            parent = 0,
+            strings = {
+                [0] = "TweenInfo",
+                [1] = "new",
+                [2] = "ImageColor3",
+                [3] = "Play",
+                [4] = "Create",
+            },
+            numbers = {
+                [0] = 7699,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+        },
+        [6] = {
+            parent = 0,
+            strings = {
+                [0] = "Options",
+                [1] = "Draggable",
+                [2] = "InputChanged",
+                [3] = "InputBegan",
+            },
+            numbers = {
+                [0] = 1,
+                [1] = 2,
+            },
+            closures = {
+                [0] = { closure = 49 },
+                [1] = { closure = 50 },
+                [2] = { closure = 51 },
+            },
+        },
+        [7] = {
+            parent = 0,
+            strings = {
+                [0] = "pcall",
+            },
+            numbers = {
+                [0] = 0,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+            closures = {
+                [0] = { closure = 52 },
+            },
+        },
+        [8] = {
+            parent = 0,
+            strings = {
+                [0] = "pcall",
+            },
+            numbers = {
+                [0] = 0,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+            closures = {
+                [0] = { closure = 53 },
+            },
+        },
+        [9] = {
+            parent = 0,
+            strings = {
+                [0] = "KeyboardEnabled",
+                [1] = "TouchEnabled",
+            },
+            numbers = {
+                [0] = 0,
+            },
+        },
+        [10] = {
+            parent = 0,
+            strings = {
+                [0] = "CurrentCamera",
+                [1] = "Vector2",
+                [2] = "new",
+                [3] = "ViewportSize",
+            },
+            numbers = {
+                [0] = 1280,
+                [1] = 720,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+            },
+        },
+        [11] = {
+            parent = 0,
+            strings = {
+                [0] = "UICorner",
+                [1] = "UDim",
+                [2] = "new", -- x2
+                [3] = "Instance",
+                [4] = "CornerRadius",
+                [5] = "Parent",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 8,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+                [1] = { import = { 6 } },
+            },
+        },
+        [12] = {
+            parent = 0,
+            strings = {
+                [0] = "Instance",
+                [1] = "UIStroke",
+                [2] = "Color",
+                [3] = "Thickness",
+                [4] = "Parent",
+            },
+            numbers = {
+                [0] = 30346,
+                [1] = 3461,
+                [2] = 1,
+                [3] = 0,
+                [4] = 56, -- x2
+            },
+            imports = {
+                [0] = { import = { 3 } },
+            },
+        },
+        [13] = {
+            parent = 0,
+            strings = {
+                [0] = "WindowGeneration", -- x2
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 1,
+            },
+        },
+        [14] = {
+            parent = 0,
+            strings = {
+                [0] = "SessionGeneration", -- x2
+            },
+            numbers = {
+                [0] = 0,
+            },
+        },
+        [15] = {
+            parent = 0,
+            strings = {
+                [0] = "table",
+                [1] = "insert",
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+        },
+        [16] = {
+            parent = 0,
+            strings = {
+                [0] = "Connect",
+            },
+            numbers = {
+                [0] = 0,
+            },
+        },
+        [17] = {
+            parent = 0,
+            strings = {
+                [0] = "pcall",
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+            closures = {
+                [0] = { closure = 54 },
+            },
+        },
+        [18] = {
+            parent = 0,
+            strings = {
+                [0] = "Notify", -- x2
+                [1] = "Welcome back",
+                [2] = "success", -- x2
+                [3] = "Callbacks", -- x3
+                [4] = "OnSuccess", -- x2
+                [5] = "Validate",
+                [6] = "OnVerify",
+                [7] = "getgenv",
+                [8] = "OnyxClosed",
+                [9] = "SCRIPT_KEY",
+                [10] = "Options",
+                [11] = "Keyless",
+            },
+            numbers = {
+                [0] = 2, -- x4
+                [1] = 4,
+                [2] = 3, -- x2
+                [3] = 5,
+                [4] = 0,
+                [5] = 1,
+            },
+            booleans = {
+                [0] = false,
+                [1] = true,
+            },
+            imports = {
+                [0] = { import = { 9 } }, -- x3
+                [1] = { import = { 12 } },
+            },
+            closures = {
+                [0] = { closure = 55 },
+            },
+        },
+        [19] = {
+            parent = 0,
+            strings = {
+                [0] = "Provider",
+                [1] = "Config required: Service, Identifier, Provider",
+                [2] = "getgenv",
+                [3] = "SCRIPT_KEY",
+                [4] = "Service",
+                [5] = "OnyxClosed",
+                [6] = "Identifier",
+                [7] = "assert",
+            },
+            numbers = {
+                [0] = 2,
+            },
+            booleans = {
+                [0] = false,
+            },
+            imports = {
+                [0] = { import = { 3 } }, -- x2
+                [1] = { import = { 9 } },
+            },
+            closures = {
+                [0] = { closure = 56 },
+            },
+        },
+        [20] = {
+            parent = 0,
+            strings = {
+                [0] = "game",
+                [1] = "GetService",
+                [2] = "CoreGui",
+            },
+            numbers = {
+                [0] = 0,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+        },
+        [21] = {
+            parent = 0,
+            strings = {
+                [0] = "new", -- x4
+                [1] = "UDim",
+                [2] = "PaddingBottom",
+                [3] = "Parent",
+                [4] = "PaddingRight",
+                [5] = "PaddingTop",
+                [6] = "Instance",
+                [7] = "UIPadding",
+            },
+            numbers = {
+                [0] = 0, -- x3
+            },
+            imports = {
+                [0] = { import = { 2 } }, -- x4
+                [1] = { import = { 8 } },
+            },
+        },
+        [22] = {
+            parent = 0,
+            strings = {
+                [0] = "BorderSizePixel",
+                [1] = "Name",
+                [2] = "XBar",
+                [3] = "Parent",
+                [4] = "AnchorPoint",
+                [5] = "UDim2",
+                [6] = "Instance",
+                [7] = "new", -- x2
+                [8] = "Frame",
+                [9] = "Vector2",
+                [10] = "Size",
+                [11] = "BackgroundColor3",
+                [12] = "fromOffset",
+                [13] = "fromScale",
+            },
+            numbers = {
+                [0] = 0, -- x2
+                [1] = 45,
+                [2] = -45,
+                [3] = 100,
+                [4] = 1.6,
+                [5] = 0.5,
+            },
+            imports = {
+                [0] = { import = { 11 } }, -- x2
+                [1] = { import = { 13 } },
+                [2] = { import = { 15 } },
+                [3] = { import = { 18 } },
+            },
+        },
+        [23] = {
+            parent = 0,
+            strings = {
+                [0] = "Play",
+                [1] = "GetChildren",
+                [2] = "Create",
+                [3] = "Name",
+                [4] = "TweenInfo",
+                [5] = "new",
+            },
+            numbers = {
+                [0] = 0.12,
+                [1] = 2,
+                [2] = 0,
+            },
+            imports = {
+                [0] = { import = { 4 } },
+                [1] = { import = { 6 } },
+            },
+        },
+        [24] = {
+            parent = 0,
+            numbers = {
+                [0] = 236,
+            },
+        },
+        [25] = {
+            parent = 0,
+            numbers = {
+                [0] = 0,
+            },
+        },
+        [26] = {
+            parent = 0,
+            numbers = {
+                [0] = 0,
+            },
+        },
+        [27] = {
+            parent = 0,
+            strings = {
+                [0] = "type",
+                [1] = "",
+                [2] = "pcall",
+                [3] = "Validate", -- x2
+                [4] = "tostring",
+                [5] = "error",
+                [6] = "valid",
+            },
+            numbers = {
+                [0] = 413,
+                [1] = 0,
+            },
+            booleans = {
+                [0] = false, -- x2
+                [1] = true, -- x2
+            },
+            imports = {
+                [0] = { import = { 0 } }, -- x2
+                [1] = { import = { 3 } },
+                [2] = { import = { 6 } },
+                [3] = { import = { 9 } },
+            },
+        },
+        [28] = {
+            parent = 0,
+            strings = {
+                [0] = "OnyxKeyWindow",
+                [1] = "OnyxKeylessWindow",
+                [2] = "Name",
+                [3] = "WindowGeneration",
+                [4] = "getgenv",
+                [5] = "GetChildren",
+                [6] = "Destroy",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 3,
+            },
+            imports = {
+                [0] = { import = { 4 } }, -- x2
+            },
+        },
+        [29] = {
+            parent = 0,
+            strings = {
+                [0] = "gui",
+                [1] = "scrim",
+                [2] = "card",
+                [3] = "header",
+                [4] = "title",
+                [5] = "closeBtn",
+                [6] = "Y", -- x2
+                [7] = "Instance",
+                [8] = "new", -- x13
+                [9] = "TextButton",
+                [10] = "Vector2",
+                [11] = "Position", -- x5
+                [12] = "UDim2",
+                [13] = "x",
+                [14] = "TextDim", -- x2
+                [15] = "Size", -- x5
+                [16] = "Frame", -- x3
+                [17] = "Font",
+                [18] = "TextSize",
+                [19] = "Text", -- x3
+                [20] = "Hairline", -- x2
+                [21] = "Scrim",
+                [22] = "GroupTransparency",
+                [23] = "Parent", -- x8
+                [24] = "fromOffset", -- x4
+                [25] = "Name", -- x2
+                [26] = "Header",
+                [27] = "Active", -- x2
+                [28] = "BackgroundColor3", -- x4
+                [29] = "BackgroundTransparency", -- x4
+                [30] = "BorderSizePixel", -- x3
+                [31] = "math",
+                [32] = "clamp", -- x2
+                [33] = "fromScale", -- x2
+                [34] = "min", -- x2
+                [35] = "X", -- x2
+                [36] = "MouseLeave",
+                [37] = "Connect", -- x2
+                [38] = "AnchorPoint", -- x3
+                [39] = "MouseEnter",
+                [40] = "CanvasGroup",
+                [41] = "Enum",
+                [42] = "TextXAlignment", -- x2
+                [43] = "UIScale",
+                [44] = "ZIndexBehavior", -- x2
+                [45] = "Sibling",
+                [46] = "DisplayOrder",
+                [47] = "Field",
+                [48] = "AutoButtonColor",
+                [49] = "", -- x2
+                [50] = "ResetOnSpawn",
+                [51] = "IgnoreGuiInset",
+                [52] = "ScreenGui",
+                [53] = "TextLabel",
+                [54] = "Left",
+                [55] = "Card",
+                [56] = "Scale",
+            },
+            numbers = {
+                [0] = 0.82,
+                [1] = 1.12,
+                [2] = 0.5, -- x9
+                [3] = 0, -- x8
+                [4] = 10,
+                [5] = 15,
+                [6] = 1, -- x18
+                [7] = 14,
+                [8] = 28,
+                [9] = 18, -- x2
+                [10] = 46, -- x2
+                [11] = -36,
+                [12] = 11,
+                [13] = 6740,
+                [14] = 1000000,
+                [15] = -14,
+                [16] = 7, -- x2
+                [17] = 0.6,
+                [18] = 1.15,
+                [19] = 4,
+                [20] = 2,
+                [21] = 8,
+                [22] = 3,
+                [23] = 6,
+            },
+            booleans = {
+                [0] = true, -- x3
+                [1] = false, -- x2
+            },
+            imports = {
+                [0] = { import = { 9 } }, -- x8
+                [1] = { import = { 13 } }, -- x3
+                [2] = { import = { 19 } }, -- x11
+                [3] = { import = { 47 } }, -- x4
+                [4] = { import = { 62 } }, -- x2
+                [5] = { import = { 11 } },
+            },
+            closures = {
+                [0] = { closure = 57 },
+                [1] = { closure = 58 },
+                [2] = { closure = 59 },
+            },
+        },
+        [30] = {
+            parent = 0,
+            strings = {
+                [0] = "Create", -- x2
+                [1] = "card",
+                [2] = "TweenInfo",
+                [3] = "GroupTransparency",
+                [4] = "UDim2",
+                [5] = "new", -- x3
+                [6] = "Position",
+                [7] = "Play", -- x2
+                [8] = "scrim",
+                [9] = "BackgroundTransparency",
+                [10] = "EasingDirection",
+                [11] = "Out",
+                [12] = "Enum",
+                [13] = "EasingStyle",
+                [14] = "Quad",
+            },
+            numbers = {
+                [0] = 0, -- x3
+                [1] = 0.2,
+                [2] = 508,
+                [3] = 0.24,
+            },
+            imports = {
+                [0] = { import = { 2 } }, -- x2
+                [1] = { import = { 6 } },
+                [2] = { import = { 11 } },
+                [3] = { import = { 19 } }, -- x2
+            },
+        },
+        [31] = {
+            parent = 0,
+            strings = {
+                [0] = "In",
+                [1] = "GroupTransparency",
+                [2] = "UDim2",
+                [3] = "Position",
+                [4] = "Play", -- x2
+                [5] = "Completed",
+                [6] = "Enum",
+                [7] = "EasingStyle",
+                [8] = "Quad",
+                [9] = "EasingDirection",
+                [10] = "Connect",
+                [11] = "BackgroundTransparency",
+                [12] = "scrim",
+                [13] = "TweenInfo",
+                [14] = "new", -- x2
+                [15] = "card",
+            },
+            numbers = {
+                [0] = 1,
+                [1] = 0.5, -- x2
+                [2] = 0, -- x3
+                [3] = 10,
+                [4] = 0.2,
+            },
+            imports = {
+                [0] = { import = { 3 } },
+                [1] = { import = { 10 } },
+                [2] = { import = { 12 } }, -- x2
+                [3] = { import = { 14 } },
+                [4] = { import = { 21 } },
+                [5] = { import = { 23 } }, -- x2
+                [6] = { import = { 27 } },
+            },
+            closures = {
+                [0] = { closure = 60 },
+            },
+        },
+        [32] = {
+            parent = 0,
+            strings = {
+                [0] = "LayoutOrder", -- x2
+                [1] = "AutomaticSize", -- x4
+                [2] = "UDim2",
+                [3] = "fromOffset",
+                [4] = "Parent", -- x3
+                [5] = "Instance",
+                [6] = "new", -- x4
+                [7] = "TextLabel",
+                [8] = "Enum",
+                [9] = "UIListLayout",
+                [10] = "TextButton",
+                [11] = "TextSize",
+                [12] = "TextDim", -- x2
+                [13] = "TextColor3",
+                [14] = "MouseEnter",
+                [15] = "MouseLeave",
+                [16] = "Connect",
+                [17] = "BackgroundTransparency", -- x2
+                [18] = "AutoButtonColor",
+                [19] = "Text", -- x2
+                [20] = "",
+                [21] = "Size", -- x2
+                [22] = "FillDirection", -- x2
+                [23] = "Horizontal",
+                [24] = "VerticalAlignment", -- x2
+                [25] = "Center", -- x2
+                [26] = "UDim",
+                [27] = "Font",
+                [28] = "TextYAlignment", -- x2
+                [29] = "X",
+            },
+            numbers = {
+                [0] = 1, -- x4
+                [1] = 12.5,
+                [2] = 14,
+                [3] = 0, -- x3
+                [4] = 18, -- x2
+                [5] = 2, -- x3
+                [6] = 3,
+            },
+            booleans = {
+                [0] = false,
+            },
+            imports = {
+                [0] = { import = { 3 } }, -- x2
+                [1] = { import = { 7 } }, -- x3
+                [2] = { import = { 9 } },
+                [3] = { import = { 12 } }, -- x5
+                [4] = { import = { 33 } },
+                [5] = { import = { 38 } },
+            },
+            closures = {
+                [0] = { closure = 61 },
+                [1] = { closure = 62 },
+            },
+        },
+        [33] = {
+            parent = 0,
+            strings = {
+                [0] = "Instance",
+                [1] = "new", -- x19
+                [2] = "Frame", -- x3
+                [3] = "", -- x3
+                [4] = "UDim2",
+                [5] = "fromOffset", -- x8
+                [6] = "UIListLayout",
+                [7] = "Enum",
+                [8] = "Size", -- x8
+                [9] = "BackgroundTransparency", -- x5
+                [10] = "TextXAlignment", -- x4
+                [11] = "TextTruncate", -- x4
+                [12] = "AtEnd", -- x2
+                [13] = "Parent", -- x7
+                [14] = "TextLabel", -- x3
+                [15] = "X",
+                [16] = "AutomaticSize", -- x2
+                [17] = "Shop", -- x6
+                [18] = "Subtitle",
+                [19] = "ImageLabel",
+                [20] = "Vector2",
+                [21] = "Fit",
+                [22] = "ScaleType", -- x2
+                [23] = "Icon", -- x3
+                [24] = "Font", -- x3
+                [25] = "MouseEnter",
+                [26] = "Connect", -- x3
+                [27] = "Text", -- x7
+                [28] = "Left", -- x2
+                [29] = "Position", -- x7
+                [30] = "TextSize", -- x3
+                [31] = "Center", -- x3
+                [32] = "TextYAlignment", -- x2
+                [33] = "LayoutOrder", -- x2
+                [34] = "MouseButton1Click",
+                [35] = "MouseLeave",
+                [36] = "Padding",
+                [37] = "BackgroundColor3", -- x3
+                [38] = "BorderSizePixel", -- x2
+                [39] = "HorizontalAlignment", -- x2
+                [40] = "VerticalAlignment", -- x2
+                [41] = "Image",
+                [42] = "shopping-cart",
+                [43] = "TextColor3", -- x3
+                [44] = "Title",
+                [45] = "AnchorPoint", -- x2
+                [46] = "fromScale",
+                [47] = "Buy",
+                [48] = "TextButton",
+                [49] = "Hairline",
+                [50] = "Accent",
+                [51] = "ButtonText",
+                [52] = "UDim",
+                [53] = "FillDirection", -- x2
+                [54] = "Horizontal",
+                [55] = "TextDim",
+                [56] = "AutoButtonColor",
+                [57] = "Field",
+            },
+            numbers = {
+                [0] = 0, -- x14
+                [1] = 1, -- x9
+                [2] = 0.5, -- x4
+                [3] = 14,
+                [4] = 16, -- x3
+                [5] = 13, -- x2
+                [6] = 2, -- x2
+                [7] = 8,
+                [8] = 5, -- x2
+                [9] = 11.5,
+                [10] = 4,
+                [11] = 6,
+                [12] = 3,
+                [13] = 7,
+            },
+            booleans = {
+                [0] = false,
+            },
+            imports = {
+                [0] = { import = { 0 } }, -- x9
+                [1] = { import = { 2 } },
+                [2] = { import = { 6 } }, -- x15
+                [3] = { import = { 11 } }, -- x10
+                [4] = { import = { 26 } }, -- x3
+                [5] = { import = { 68 } },
+            },
+            closures = {
+                [0] = { closure = 63 },
+                [1] = { closure = 64 },
+                [2] = { closure = 65 },
+            },
+        },
+        [34] = {
+            parent = 0,
+            strings = {
+                [0] = "LayoutOrder", -- x2
+                [1] = "MouseButton1Click", -- x4
+                [2] = "Connect", -- x8
+                [3] = "PlaceholderColor3",
+                [4] = "Text", -- x6
+                [5] = "", -- x2
+                [6] = "ClearTextOnFocus",
+                [7] = "Enum",
+                [8] = "TextXAlignment", -- x4
+                [9] = "Center", -- x3
+                [10] = "Instance",
+                [11] = "new", -- x14
+                [12] = "TextButton",
+                [13] = "UDim2", -- x2
+                [14] = "fromOffset", -- x4
+                [15] = "Position", -- x5
+                [16] = "Size", -- x7
+                [17] = "TextTruncate", -- x4
+                [18] = "AtEnd", -- x2
+                [19] = "Parent", -- x8
+                [20] = "HorizontalAlignment", -- x2
+                [21] = "VerticalAlignment", -- x2
+                [22] = "TextColor3", -- x2
+                [23] = "PlaceholderText",
+                [24] = "key",
+                [25] = "TextFaint",
+                [26] = "OnyxKeyWindow",
+                [27] = "gui",
+                [28] = "card",
+                [29] = "fromScale", -- x2
+                [30] = "Font", -- x2
+                [31] = "PrimaryText",
+                [32] = "Get key",
+                [33] = "key-round",
+                [34] = "Links",
+                [35] = "Discord", -- x2
+                [36] = "Destroy",
+                [37] = "Left",
+                [38] = "Appearance", -- x2
+                [39] = "BackgroundColor3", -- x3
+                [40] = "AutoButtonColor",
+                [41] = "UIListLayout",
+                [42] = "Padding",
+                [43] = "BackgroundTransparency", -- x4
+                [44] = "Name",
+                [45] = "closeBtn",
+                [46] = "Frame", -- x3
+                [47] = "title",
+                [48] = "Title",
+                [49] = "FillDirection", -- x2
+                [50] = "Horizontal",
+                [51] = "idle",
+                [52] = "AnchorPoint",
+                [53] = "TextSize",
+                [54] = "TextDim",
+                [55] = "UDim",
+                [56] = "Vector2",
+                [57] = "Subtitle",
+                [58] = "Verify",
+                [59] = "MouseEnter",
+                [60] = "TextBox",
+                [61] = "TextLabel", -- x2
+                [62] = "MouseLeave",
+                [63] = "Field",
+                [64] = "BorderSizePixel", -- x2
+                [65] = "Hairline",
+                [66] = "header",
+                [67] = "Shop",
+                [68] = "Enabled",
+                [69] = "FocusLost",
+                [70] = "Focused",
+                [71] = "GetPropertyChangedSignal",
+                [72] = "GetChildren",
+                [73] = "message-circle",
+            },
+            numbers = {
+                [0] = 2, -- x2
+                [1] = 18, -- x5
+                [2] = 200,
+                [3] = 1, -- x15
+                [4] = -36, -- x4
+                [5] = 0, -- x15
+                [6] = 44,
+                [7] = 360,
+                [8] = 56,
+                [9] = 100,
+                [10] = 9, -- x3
+                [11] = 144,
+                [12] = 16,
+                [13] = 86,
+                [14] = 60,
+                [15] = 12.5,
+                [16] = 14, -- x4
+                [17] = 0.5, -- x2
+                [18] = 234,
+                [19] = 42,
+                [20] = 16036,
+                [21] = 6, -- x6
+                [22] = 4,
+                [23] = 3, -- x3
+                [24] = 5,
+                [25] = 7, -- x3
+                [26] = 24,
+                [27] = 11,
+                [28] = 23,
+            },
+            booleans = {
+                [0] = false, -- x5
+                [1] = true,
+            },
+            imports = {
+                [0] = { import = { 9 } }, -- x7
+                [1] = { import = { 14 } }, -- x8
+                [2] = { import = { 18 } }, -- x11
+                [3] = { import = { 82 } },
+                [4] = { import = { 85 } },
+                [5] = { import = { 16 } },
+            },
+            closures = {
+                [0] = { closure = 66 },
+                [1] = { closure = 67 },
+                [2] = { closure = 68 },
+                [3] = { closure = 69 },
+                [4] = { closure = 70 },
+                [5] = { closure = 71 },
+                [6] = { closure = 72 },
+                [7] = { closure = 73 },
+                [8] = { closure = 74 },
+                [9] = { closure = 75 },
+                [10] = { closure = 76 },
+                [11] = { closure = 77 },
+            },
+        },
+        [35] = {
+            parent = 0,
+            strings = {
+                [0] = "WindowGeneration",
+            },
+            numbers = {
+                [0] = 423,
+            },
+        },
+        [36] = {
+            parent = 0,
+            strings = {
+                [0] = "pcall",
+            },
+            booleans = {
+                [0] = true,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+            closures = {
+                [0] = { closure = 78 },
+            },
+        },
+        [37] = {
+            parent = 0,
+            strings = {
+                [0] = "Storage",
+                [1] = "FileName",
+            },
+        },
+        [38] = {
+            parent = 0,
+            strings = {
+                [0] = "pcall",
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+            closures = {
+                [0] = { closure = 79 },
+            },
+        },
+        [39] = {
+            parent = 0,
+            strings = {
+                [0] = "Storage",
+                [1] = "Remember",
+                [2] = "pcall",
+            },
+            imports = {
+                [0] = { import = { 2 } },
+            },
+            closures = {
+                [0] = { closure = 80 },
+            },
+        },
+        [40] = {
+            parent = 0,
+        },
+        [41] = {
+            parent = 0,
+            strings = {
+                [0] = "warn",
+                [1] = "[OnyxUI] Callback failed:",
+                [2] = "type",
+            },
+            numbers = {
+                [0] = 2965,
+            },
+            booleans = {
+                [0] = true,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+                [1] = { import = { 4 } },
+            },
+        },
+        [42] = {
+            parent = 0,
+            strings = {
+                [0] = "Cleanups", -- x3
+                [1] = "pcall",
+            },
+            numbers = {
+                [0] = -1,
+            },
+            imports = {
+                [0] = { import = { 2 } },
+            },
+            closures = {
+                [0] = { closure = 81 },
+            },
+        },
+        [43] = {
+            parent = 0,
+            strings = {
+                [0] = "TextSize", -- x2
+                [1] = "TextDim",
+                [2] = "TextColor3", -- x2
+                [3] = "Enum",
+                [4] = "OnyxKeylessWindow",
+                [5] = "UDim2",
+                [6] = "fromOffset", -- x3
+                [7] = "Connect", -- x5
+                [8] = "header",
+                [9] = "Discord", -- x2
+                [10] = "MouseLeave",
+                [11] = "Links",
+                [12] = "Instance",
+                [13] = "Text", -- x4
+                [14] = "new", -- x8
+                [15] = "UIListLayout",
+                [16] = "FillDirection", -- x2
+                [17] = "HorizontalAlignment",
+                [18] = "Position", -- x2
+                [19] = "message-circle",
+                [20] = "MouseButton1Click", -- x3
+                [21] = "Name",
+                [22] = "Size", -- x4
+                [23] = "BackgroundTransparency", -- x3
+                [24] = "Parent", -- x5
+                [25] = "TextLabel", -- x2
+                [26] = "Shop",
+                [27] = "Enabled",
+                [28] = "closeBtn",
+                [29] = "Font", -- x2
+                [30] = "GetChildren",
+                [31] = "Primary",
+                [32] = "BackgroundColor3",
+                [33] = "AutoButtonColor",
+                [34] = "",
+                [35] = "PrimaryText",
+                [36] = "gui",
+                [37] = "card",
+                [38] = "title",
+                [39] = "Appearance", -- x2
+                [40] = "KeylessTitle",
+                [41] = "TextYAlignment", -- x2
+                [42] = "Top",
+                [43] = "TextWrapped",
+                [44] = "Destroy",
+                [45] = "fromScale",
+                [46] = "TextXAlignment", -- x2
+                [47] = "Left",
+                [48] = "Center", -- x2
+                [49] = "VerticalAlignment", -- x2
+                [50] = "Continue",
+                [51] = "MouseEnter",
+                [52] = "Frame",
+                [53] = "KeylessSubtitle",
+            },
+            numbers = {
+                [0] = 360,
+                [1] = 18, -- x2
+                [2] = 9,
+                [3] = 170,
+                [4] = 1,
+                [5] = 796,
+                [6] = 196,
+                [7] = 56,
+                [8] = 4,
+                [9] = 16,
+                [10] = 3, -- x3
+                [11] = 2,
+                [12] = 0,
+                [13] = 10,
+                [14] = 12,
+                [15] = 17,
+            },
+            booleans = {
+                [0] = false,
+                [1] = true,
+            },
+            imports = {
+                [0] = { import = { 3 } }, -- x5
+                [1] = { import = { 7 } }, -- x7
+                [2] = { import = { 20 } }, -- x4
+                [3] = { import = { 55 } },
+            },
+            closures = {
+                [0] = { closure = 82 },
+                [1] = { closure = 83 },
+                [2] = { closure = 84 },
+                [3] = { closure = 85 },
+                [4] = { closure = 86 },
+            },
+        },
+        [44] = {
+            parent = 0,
+            numbers = {
+                [0] = 0,
+                [1] = 1,
+                [2] = 2,
+            },
+        },
+        [45] = {
+            parent = 0,
+            strings = {
+                [0] = "SessionGeneration",
+                [1] = "getgenv",
+                [2] = "OnyxUILoaded",
+                [3] = "Callbacks",
+                [4] = "OnSuccess",
+                [5] = "task",
+                [6] = "wait",
+                [7] = "Notify",
+                [8] = "Keyless access approved",
+            },
+            numbers = {
+                [0] = 3,
+                [1] = 0.3,
+                [2] = 1,
+                [3] = 2,
+                [4] = 243,
+            },
+            booleans = {
+                [0] = false,
+            },
+            imports = {
+                [0] = { import = { 2 } },
+                [1] = { import = { 7 } },
+            },
+        },
+        [46] = {
+            parent = 1,
+            strings = {
+                [0] = "setclipboard",
+            },
+            numbers = {
+                [0] = 0,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+        },
+        [47] = {
+            parent = 2,
+            strings = {
+                [0] = "UDim2",
+                [1] = "new",
+                [2] = "TweenInfo",
+                [3] = "Notifications", -- x2
+                [4] = "card", -- x3
+                [5] = "Parent",
+                [6] = "Position",
+                [7] = "Play",
+                [8] = "height",
+                [9] = "Create",
+                [10] = "EasingStyle",
+                [11] = "Quad",
+            },
+            numbers = {
+                [0] = 0.5,
+                [1] = 0, -- x2
+                [2] = 1, -- x2
+                [3] = 0.22,
+                [4] = 16,
+                [5] = -1,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+                [1] = { import = { 2 } }, -- x2
+                [2] = { import = { 7 } },
+                [3] = { import = { 17 } },
+            },
+        },
+        [48] = {
+            parent = 2,
+            strings = {
+                [0] = "ipairs",
+                [1] = "UDim2",
+                [2] = "new", -- x2
+                [3] = "TweenInfo",
+                [4] = "Enum",
+                [5] = "EasingStyle",
+                [6] = "Quad",
+                [7] = "Position",
+                [8] = "Play",
+                [9] = "task",
+                [10] = "delay",
+                [11] = "table",
+                [12] = "remove",
+                [13] = "Notifications",
+                [14] = "Create",
+            },
+            numbers = {
+                [0] = 0.5,
+                [1] = 0, -- x2
+                [2] = 0.2,
+                [3] = 4,
+                [4] = 2,
+                [5] = 1,
+                [6] = 3,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+                [1] = { import = { 2 } },
+                [2] = { import = { 7 } },
+                [3] = { import = { 10 } },
+                [4] = { import = { 16 } },
+                [5] = { import = { 18 } },
+                [6] = { import = { 21 } },
+            },
+            closures = {
+                [0] = { closure = 87 },
+            },
+        },
+        [49] = {
+            parent = 6,
+            strings = {
+                [0] = "Enum",
+                [1] = "UserInputType",
+                [2] = "MouseMovement",
+                [3] = "Touch",
+            },
+            imports = {
+                [0] = { import = { 0 } }, -- x2
+            },
+        },
+        [50] = {
+            parent = 6,
+            strings = {
+                [0] = "UserInputType", -- x4
+                [1] = "Enum",
+                [2] = "Touch",
+                [3] = "Offset", -- x2
+                [4] = "Y", -- x2
+                [5] = "UDim2",
+                [6] = "new",
+                [7] = "X", -- x3
+                [8] = "Scale", -- x2
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 1,
+                [2] = 2,
+                [3] = 4,
+            },
+            imports = {
+                [0] = { import = { 1 } }, -- x2
+                [1] = { import = { 6 } },
+            },
+        },
+        [51] = {
+            parent = 6,
+            strings = {
+                [0] = "UserInputType", -- x2
+                [1] = "Enum",
+                [2] = "Touch",
+                [3] = "Changed",
+                [4] = "Position", -- x2
+                [5] = "MouseButton1",
+            },
+            numbers = {
+                [0] = 93,
+            },
+            imports = {
+                [0] = { import = { 1 } }, -- x2
+                [1] = { import = { 0 } },
+                [2] = { import = { 5 } },
+            },
+            closures = {
+                [0] = { closure = 88 },
+            },
+        },
+        [52] = {
+            parent = 7,
+            strings = {
+                [0] = "isfile",
+            },
+            numbers = {
+                [0] = 0,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+        },
+        [53] = {
+            parent = 8,
+            strings = {
+                [0] = "isfile",
+                [1] = "delfile",
+            },
+            numbers = {
+                [0] = 0, -- x2
+            },
+            imports = {
+                [0] = { import = { 0 } },
+                [1] = { import = { 2 } },
+            },
+        },
+        [54] = {
+            parent = 17,
+            strings = {
+                [0] = "loadstring",
+                [1] = "game",
+                [2] = "HttpGet",
+            },
+            imports = {
+                [0] = { import = { 0 } },
+                [1] = { import = { 2 } },
+            },
+        },
+        [55] = {
+            parent = 18,
+            strings = {
+                [0] = "wait", -- x3
+                [1] = "task",
+                [2] = "SessionGeneration", -- x5
+                [3] = "Saved key confirmed",
+                [4] = "success",
+                [5] = "Callbacks",
+                [6] = "OnSuccess",
+                [7] = "Storage",
+                [8] = "AutoLoad",
+                [9] = "Notify", -- x4
+                [10] = "getgenv",
+                [11] = "SCRIPT_KEY", -- x3
+                [12] = "Expired",
+                [13] = "Saved key is no longer valid",
+                [14] = "Options", -- x2
+                [15] = "Keyless",
+                [16] = "Network error",
+                [17] = "Saved key could not be verified",
+                [18] = "KeylessUI",
+                [19] = "warning",
+                [20] = "Welcome back",
+                [21] = "error",
+                [22] = "Validating saved key…",
+                [23] = "info",
+                [24] = "Validate",
+            },
+            numbers = {
+                [0] = 0.4,
+                [1] = 0.1,
+                [2] = 2, -- x7
+                [3] = 3, -- x2
+                [4] = 0.6,
+                [5] = 28356,
+                [6] = 4, -- x2
+                [7] = 0, -- x3
+                [8] = 1, -- x3
+                [9] = 7,
+                [10] = 6,
+                [11] = 5,
+                [12] = 9,
+                [13] = 8,
+                [14] = 123,
+            },
+            booleans = {
+                [0] = true,
+                [1] = false,
+            },
+            imports = {
+                [0] = { import = { 2 } }, -- x4
+                [1] = { import = { 14 } }, -- x3
+            },
+        },
+        [56] = {
+            parent = 19,
+            strings = {
+                [0] = "getgenv",
+                [1] = "SCRIPT_KEY", -- x5
+                [2] = "SessionGeneration", -- x10
+                [3] = "Storage",
+                [4] = "AutoLoad",
+                [5] = "pcall",
+                [6] = "Notify", -- x7
+                [7] = "Expired",
+                [8] = "Saved key is no longer valid",
+                [9] = "error", -- x5
+                [10] = "warning",
+                [11] = "Options", -- x4
+                [12] = "Keyless", -- x2
+                [13] = "valid", -- x3
+                [14] = "task",
+                [15] = "wait", -- x5
+                [16] = "Links",
+                [17] = "GetKey",
+                [18] = "Existing key could not be verified",
+                [19] = "Network error", -- x2
+                [20] = "Saved key could not be verified",
+                [21] = "success",
+                [22] = "Callbacks", -- x2
+                [23] = "Welcome back", -- x2
+                [24] = "Saved key confirmed",
+                [25] = "Error",
+                [26] = "KeylessUI", -- x2
+                [27] = "identifier",
+                [28] = "Provider",
+                [29] = "provider",
+                [30] = "Checking",
+                [31] = "Key validated",
+                [32] = "type",
+                [33] = "OnSuccess", -- x2
+                [34] = "Validating saved key…",
+                [35] = "info",
+                [36] = "Service",
+                [37] = "service",
+                [38] = "Identifier",
+                [39] = "Failed to load Junkie SDK",
+            },
+            numbers = {
+                [0] = 4, -- x3
+                [1] = 3, -- x4
+                [2] = 0.6,
+                [3] = 0.1, -- x3
+                [4] = 2, -- x15
+                [5] = 19586,
+                [6] = 277,
+                [7] = 5, -- x3
+                [8] = 76,
+                [9] = 1, -- x6
+                [10] = 0, -- x7
+                [11] = 186,
+                [12] = 6,
+                [13] = 7, -- x2
+                [14] = 166,
+                [15] = 90,
+                [16] = 35,
+            },
+            booleans = {
+                [0] = true,
+                [1] = false, -- x2
+            },
+            imports = {
+                [0] = { import = { 0 } }, -- x5
+                [1] = { import = { 5 } },
+                [2] = { import = { 7 } }, -- x4
+                [3] = { import = { 20 } }, -- x5
+                [4] = { import = { 47 } }, -- x2
+            },
+            closures = {
+                [0] = { closure = 89 },
+                [1] = { closure = 90 },
+                [2] = { closure = 91 },
+                [3] = { closure = 92 },
+                [4] = { closure = 93 },
+                [5] = { closure = 94 },
+            },
+        },
+        [57] = {
+            parent = 29,
+            strings = {
+                [0] = "Create",
+                [1] = "TweenInfo",
+                [2] = "new",
+                [3] = "Play",
+                [4] = "TextDim",
+            },
+            numbers = {
+                [0] = 0.12,
+                [1] = 0,
+                [2] = 3,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+            },
+        },
+        [58] = {
+            parent = 29,
+            numbers = {
+                [0] = 1,
+                [1] = 0, -- x2
+            },
+        },
+        [59] = {
+            parent = 29,
+            strings = {
+                [0] = "Create",
+                [1] = "TweenInfo",
+                [2] = "Text",
+                [3] = "new",
+            },
+            numbers = {
+                [0] = 0.12,
+                [1] = 0,
+                [2] = 1,
+                [3] = 3,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+            },
+        },
+        [60] = {
+            parent = 31,
+            strings = {
+                [0] = "gui", -- x2
+                [1] = "Destroy",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 1,
+            },
+        },
+        [61] = {
+            parent = 32,
+            strings = {
+                [0] = "Create",
+                [1] = "TweenInfo",
+                [2] = "Text", -- x2
+                [3] = "TextColor3",
+            },
+            numbers = {
+                [0] = 0.12,
+                [1] = 14402,
+                [2] = 0,
+                [3] = 45,
+                [4] = 4,
+                [5] = 3, -- x2
+                [6] = 2,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+            },
+        },
+        [62] = {
+            parent = 32,
+            strings = {
+                [0] = "TextDim", -- x2
+                [1] = "Play",
+                [2] = "Create",
+                [3] = "TweenInfo",
+            },
+            numbers = {
+                [0] = 0.12,
+                [1] = 3,
+                [2] = 2, -- x2
+                [3] = 0,
+                [4] = 1,
+            },
+            imports = {
+                [0] = { import = { 3 } },
+            },
+        },
+        [63] = {
+            parent = 33,
+            strings = {
+                [0] = "Shop", -- x3
+                [1] = "Link",
+                [2] = "Notify", -- x2
+                [3] = "Link copied to clipboard",
+                [4] = "No shop link configured",
+                [5] = "copy",
+                [6] = "warning",
+            },
+            numbers = {
+                [0] = 2,
+                [1] = 3,
+                [2] = 1,
+                [3] = 81,
+                [4] = 0,
+            },
+        },
+        [64] = {
+            parent = 33,
+            strings = {
+                [0] = "Create",
+                [1] = "Play",
+                [2] = "TweenInfo",
+                [3] = "new",
+                [4] = "AccentDeep",
+            },
+            numbers = {
+                [0] = 0.12,
+                [1] = 0,
+                [2] = 2,
+            },
+            imports = {
+                [0] = { import = { 2 } },
+            },
+        },
+        [65] = {
+            parent = 33,
+            strings = {
+                [0] = "Create",
+                [1] = "TweenInfo",
+                [2] = "new",
+                [3] = "Accent",
+                [4] = "BackgroundColor3",
+                [5] = "Play",
+            },
+            numbers = {
+                [0] = 0.12,
+                [1] = 0,
+                [2] = 1,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+            },
+        },
+        [66] = {
+            parent = 34,
+            strings = {
+                [0] = "Links",
+                [1] = "Discord", -- x2
+                [2] = "Notify",
+                [3] = "Invite link copied",
+                [4] = "discord",
+            },
+            numbers = {
+                [0] = 2,
+                [1] = 0,
+                [2] = 1,
+            },
+        },
+        [67] = {
+            parent = 34,
+            strings = {
+                [0] = "Accent",
+                [1] = "idle",
+                [2] = "TextColor3",
+                [3] = "Error",
+            },
+            numbers = {
+                [0] = 5,
+                [1] = 3,
+                [2] = 1,
+                [3] = 4,
+            },
+        },
+        [68] = {
+            parent = 34,
+            strings = {
+                [0] = "Create",
+                [1] = "TweenInfo",
+                [2] = "new",
+                [3] = "BackgroundColor3",
+                [4] = "Play",
+            },
+            numbers = {
+                [0] = 0.14,
+                [1] = 0,
+                [2] = 1,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+            },
+        },
+        [69] = {
+            parent = 34,
+            strings = {
+                [0] = "Notify",
+                [1] = "Active",
+                [2] = "getgenv",
+                [3] = "OnyxClosed",
+                [4] = "Key window dismissed",
+                [5] = "close",
+            },
+            numbers = {
+                [0] = 2,
+                [1] = 206,
+                [2] = 1,
+                [3] = 5,
+            },
+            booleans = {
+                [0] = false,
+                [1] = true,
+            },
+            imports = {
+                [0] = { import = { 3 } },
+            },
+            closures = {
+                [0] = { closure = 95 },
+            },
+        },
+        [70] = {
+            parent = 34,
+            strings = {
+                [0] = "BackgroundTransparency",
+                [1] = "Play",
+                [2] = "Verify",
+                [3] = "TweenInfo",
+                [4] = "new",
+            },
+            numbers = {
+                [0] = 0.12,
+            },
+            imports = {
+                [0] = { import = { 3 } },
+            },
+        },
+        [71] = {
+            parent = 34,
+            strings = {
+                [0] = "Success", -- x2
+                [1] = "Error", -- x2
+                [2] = "Appearance",
+                [3] = "Subtitle",
+                [4] = "TextDim",
+                [5] = "Hairline",
+                [6] = "Accent", -- x3
+                [7] = "Invalid key",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 3, -- x7
+                [2] = 87,
+                [3] = 2, -- x8
+                [4] = 42, -- x2
+                [5] = 106,
+                [6] = 30,
+                [7] = 1,
+                [8] = 9,
+            },
+            imports = {
+                [0] = { import = { 6 } },
+            },
+        },
+        [72] = {
+            parent = 34,
+            strings = {
+                [0] = "Invalid key", -- x2
+                [1] = "success", -- x2
+                [2] = "task",
+                [3] = "wait", -- x2
+                [4] = "closeBtn",
+                [5] = "Active",
+                [6] = "error", -- x3
+                [7] = "Notify", -- x3
+                [8] = "Welcome",
+                [9] = "Key verified",
+                [10] = "spawn",
+                [11] = "pcall",
+                [12] = "Validate", -- x2
+                [13] = "tostring",
+                [14] = "Network error", -- x2
+                [15] = "OnyxUILoaded",
+                [16] = "type",
+                [17] = "Denied",
+                [18] = "", -- x2
+                [19] = "Invalid verification response",
+                [20] = "message",
+                [21] = "KEY_INVALIDATED",
+                [22] = "Key was revoked", -- x2
+                [23] = "HWID_MISMATCH",
+                [24] = "HWID limit reached",
+                [25] = "ALREADY_USED",
+                [26] = "Key already redeemed",
+                [27] = "REVOKED",
+                [28] = "Hold on",
+                [29] = "Enter your key first",
+                [30] = "warning",
+                [31] = "SERVICE_NOT_FOUND",
+                [32] = "Service not found",
+                [33] = "PREMIUM_REQUIRED",
+                [34] = "Premium required",
+                [35] = "ERROR",
+                [36] = "getgenv",
+                [37] = "SCRIPT_KEY",
+                [38] = "verifying",
+                [39] = "Error",
+                [40] = "valid",
+                [41] = "KEY_INVALID",
+                [42] = "Key not found",
+                [43] = "KEY_EXPIRED",
+                [44] = "Key has expired",
+                [45] = "HWID_BANNED",
+                [46] = "Hardware banned",
+                [47] = "Callbacks",
+                [48] = "OnFail",
+                [49] = "string",
+                [50] = "format",
+                [51] = "Wait %ds",
+                [52] = "Checking…",
+                [53] = "Text",
+                [54] = "gsub",
+                [55] = "%s+",
+                [56] = "delay",
+                [57] = "No verify function set",
+            },
+            numbers = {
+                [0] = 0.6,
+                [1] = 0.3,
+                [2] = 2, -- x2
+                [3] = 5, -- x4
+                [4] = 8, -- x3
+                [5] = 6, -- x4
+                [6] = 7, -- x3
+                [7] = 1,
+                [8] = 9, -- x2
+                [9] = 19,
+                [10] = 16, -- x2
+                [11] = 18,
+                [12] = 17,
+                [13] = 13,
+                [14] = 209,
+                [15] = 4,
+            },
+            booleans = {
+                [0] = true, -- x5
+                [1] = false, -- x6
+            },
+            imports = {
+                [0] = { import = { 2 } }, -- x4
+                [1] = { import = { 16 } },
+                [2] = { import = { 19 } },
+                [3] = { import = { 23 } }, -- x2
+                [4] = { import = { 45 } }, -- x2
+                [5] = { import = { 60 } },
+                [6] = { import = { 68 } },
+            },
+            closures = {
+                [0] = { closure = 96 },
+                [1] = { closure = 97 },
+                [2] = { closure = 98 },
+            },
+        },
+        [73] = {
+            parent = 34,
+            strings = {
+                [0] = "Links",
+                [1] = "GetKey", -- x2
+                [2] = "Notify", -- x2
+                [3] = "Get key",
+                [4] = "copy",
+                [5] = "warning",
+                [6] = "Unavailable",
+                [7] = "No key link configured",
+            },
+            numbers = {
+                [0] = 3,
+                [1] = 1,
+                [2] = 0,
+                [3] = 243,
+            },
+        },
+        [74] = {
+            parent = 34,
+            strings = {
+                [0] = "new",
+                [1] = "BackgroundTransparency",
+                [2] = "Play",
+                [3] = "Active",
+                [4] = "Create",
+                [5] = "TweenInfo",
+            },
+            numbers = {
+                [0] = 0.12,
+                [1] = 0, -- x2
+                [2] = 1,
+            },
+            booleans = {
+                [0] = false,
+            },
+            imports = {
+                [0] = { import = { 6 } },
+            },
+        },
+        [75] = {
+            parent = 34,
+            strings = {
+                [0] = "Create",
+                [1] = "TweenInfo",
+                [2] = "new",
+                [3] = "BackgroundTransparency",
+                [4] = "Play",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 245,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+            },
+        },
+        [76] = {
+            parent = 34,
+            strings = {
+                [0] = "idle",
+                [1] = "TextColor3",
+                [2] = "Error",
+            },
+            numbers = {
+                [0] = 5,
+                [1] = 0,
+            },
+        },
+        [77] = {
+            parent = 34,
+            strings = {
+                [0] = "focus",
+                [1] = "TextColor3",
+                [2] = "Error",
+            },
+            numbers = {
+                [0] = 4,
+            },
+        },
+        [78] = {
+            parent = 36,
+            strings = {
+                [0] = "type",
+                [1] = "readfile",
+                [2] = "delfile",
+                [3] = "isfolder",
+                [4] = "isfile",
+                [5] = "makefolder",
+                [6] = "writefile",
+            },
+            numbers = {
+                [0] = 252,
+            },
+            imports = {
+                [0] = { import = { 0 } }, -- x5
+                [1] = { import = { 2 } },
+                [2] = { import = { 4 } },
+                [3] = { import = { 6 } },
+                [4] = { import = { 8 } },
+                [5] = { import = { 10 } },
+                [6] = { import = { 12 } },
+            },
+        },
+        [79] = {
+            parent = 38,
+            strings = {
+                [0] = "isfolder",
+                [1] = "OnyxUI", -- x2
+                [2] = "makefolder",
+            },
+            imports = {
+                [0] = { import = { 0 } },
+                [1] = { import = { 3 } },
+            },
+        },
+        [80] = {
+            parent = 39,
+            strings = {
+                [0] = "writefile",
+            },
+            numbers = {
+                [0] = 2,
+                [1] = 0,
+                [2] = 176,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+        },
+        [81] = {
+            parent = 42,
+            strings = {
+                [0] = "typeof",
+                [1] = "cancel",
+                [2] = "type",
+                [3] = "Disconnect",
+            },
+            numbers = {
+                [0] = 0, -- x5
+            },
+            imports = {
+                [0] = { import = { 0 } },
+                [1] = { import = { 2 } },
+                [2] = { import = { 4 } }, -- x2
+            },
+        },
+        [82] = {
+            parent = 43,
+            strings = {
+                [0] = "Play",
+                [1] = "Active",
+                [2] = "Create",
+                [3] = "TweenInfo",
+                [4] = "new",
+            },
+            numbers = {
+                [0] = 31593,
+                [1] = 0,
+            },
+            imports = {
+                [0] = { import = { 3 } },
+            },
+        },
+        [83] = {
+            parent = 43,
+            strings = {
+                [0] = "getgenv",
+                [1] = "Window dismissed",
+                [2] = "close",
+                [3] = "closeBtn",
+                [4] = "OnyxClosed",
+                [5] = "Notify",
+            },
+            numbers = {
+                [0] = 2,
+                [1] = 1, -- x2
+                [2] = 4,
+                [3] = 3,
+            },
+            booleans = {
+                [0] = true,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+            closures = {
+                [0] = { closure = 99 },
+            },
+        },
+        [84] = {
+            parent = 43,
+            strings = {
+                [0] = "Create",
+                [1] = "TweenInfo",
+                [2] = "new",
+                [3] = "Play",
+            },
+            numbers = {
+                [0] = 0.12,
+                [1] = 0,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+            },
+        },
+        [85] = {
+            parent = 43,
+            strings = {
+                [0] = "Notify",
+                [1] = "Invite link copied",
+                [2] = "discord",
+                [3] = "Links",
+                [4] = "Discord",
+            },
+            numbers = {
+                [0] = 2,
+                [1] = 9,
+                [2] = 0,
+                [3] = 1,
+            },
+            imports = {
+                [0] = { import = { 5 } },
+            },
+        },
+        [86] = {
+            parent = 43,
+            strings = {
+                [0] = "OnyxUILoaded",
+                [1] = "Notify",
+                [2] = "getgenv",
+                [3] = "SCRIPT_KEY",
+                [4] = "KEYLESS",
+                [5] = "Ready",
+                [6] = "Script loaded",
+                [7] = "success",
+            },
+            numbers = {
+                [0] = 2,
+                [1] = 1, -- x2
+                [2] = 0,
+                [3] = 4,
+            },
+            booleans = {
+                [0] = false,
+            },
+            imports = {
+                [0] = { import = { 3 } }, -- x2
+            },
+            closures = {
+                [0] = { closure = 100 },
+            },
+        },
+        [87] = {
+            parent = 48,
+            strings = {
+                [0] = "Destroy",
+            },
+            numbers = {
+                [0] = 1,
+                [1] = 0, -- x2
+            },
+        },
+        [88] = {
+            parent = 51,
+            strings = {
+                [0] = "UserInputState",
+            },
+        },
+        [89] = {
+            parent = 56,
+            strings = {
+                [0] = "check_key",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 1,
+            },
+        },
+        [90] = {
+            parent = 56,
+            strings = {
+                [0] = "Links",
+                [1] = "get_key_link",
+                [2] = "GetKey",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 1,
+            },
+        },
+        [91] = {
+            parent = 56,
+            strings = {
+                [0] = "check_key",
+            },
+            numbers = {
+                [0] = 0,
+            },
+        },
+        [92] = {
+            parent = 56,
+            strings = {
+                [0] = "check_key",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 1,
+            },
+        },
+        [93] = {
+            parent = 56,
+            strings = {
+                [0] = "check_key",
+                [1] = "KEYLESS",
+            },
+            numbers = {
+                [0] = 0,
+            },
+        },
+        [94] = {
+            parent = 56,
+            strings = {
+                [0] = "loadstring",
+                [1] = "game",
+                [2] = "https://jnkie.com/sdk/library.lua",
+            },
+            imports = {
+                [0] = { import = { 0 } },
+                [1] = { import = { 2 } },
+            },
+        },
+        [95] = {
+            parent = 69,
+            strings = {
+                [0] = "Callbacks",
+                [1] = "OnClose",
+            },
+        },
+        [96] = {
+            parent = 72,
+            strings = {
+                [0] = "Wait %ds",
+                [1] = "task",
+                [2] = "wait",
+                [3] = "Error",
+                [4] = "string",
+                [5] = "format", -- x2
+                [6] = "idle",
+            },
+            numbers = {
+                [0] = 1, -- x3
+                [1] = -1,
+                [2] = 3, -- x2
+                [3] = 50,
+                [4] = 9,
+                [5] = 88,
+                [6] = 0,
+                [7] = 2, -- x2
+            },
+            booleans = {
+                [0] = true,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+                [1] = { import = { 5 } }, -- x2
+            },
+        },
+        [97] = {
+            parent = 72,
+            strings = {
+                [0] = "Callbacks",
+                [1] = "OnSuccess",
+            },
+            numbers = {
+                [0] = 1,
+            },
+            imports = {
+                [0] = { import = { 1 } },
+            },
+        },
+        [98] = {
+            parent = 72,
+            strings = {
+                [0] = "pcall",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 1,
+            },
+            imports = {
+                [0] = { import = { 0 } },
+            },
+            closures = {
+                [0] = { closure = 101 },
+            },
+        },
+        [99] = {
+            parent = 83,
+            strings = {
+                [0] = "Callbacks",
+                [1] = "OnClose",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 2,
+            },
+        },
+        [100] = {
+            parent = 86,
+            strings = {
+                [0] = "Callbacks",
+                [1] = "OnSuccess",
+            },
+            numbers = {
+                [0] = 0,
+            },
+        },
+        [101] = {
+            parent = 98,
+            strings = {
+                [0] = "LocalPlayer",
+                [1] = "Kick",
+                [2] = "Hardware banned",
+            },
+            numbers = {
+                [0] = 0,
+                [1] = 1,
+            },
+        },
+    },
+    wrapper_values = {
+        [0] = {
+            strings = {
+                [0] = "game", -- x3
+                [1] = "Color3", -- x14
+            },
+        },
+        [2] = {
+            strings = {
+                [0] = "tostring", -- x2
+            },
+        },
+        [3] = {
+            strings = {
+                [0] = "Url",
+            },
+        },
+        [6] = {
+            strings = {
+                [0] = "Draggable",
+                [1] = "InputChanged",
+            },
+        },
+        [12] = {
+            strings = {
+                [0] = "Transparency",
+            },
+        },
+        [15] = {
+            strings = {
+                [0] = "table",
+            },
+        },
+        [18] = {
+            strings = {
+                [0] = "IsJunkieMode",
+                [1] = "Junkie",
+            },
+        },
+        [19] = {
+            strings = {
+                [0] = "IsJunkieMode",
+                [1] = "getgenv",
+            },
+        },
+        [20] = {
+            strings = {
+                [0] = "game",
+            },
+        },
+        [21] = {
+            strings = {
+                [0] = "PaddingLeft",
+            },
+        },
+        [22] = {
+            strings = {
+                [0] = "Rotation",
+            },
+        },
+        [23] = {
+            strings = {
+                [0] = "XBar",
+            },
+        },
+        [27] = {
+            strings = {
+                [0] = "boolean",
+                [1] = "NETWORK",
+                [2] = "tostring",
+                [3] = "table",
+            },
+        },
+        [28] = {
+            strings = {
+                [0] = "CurrentWindow",
+                [1] = "WindowGeneration",
+                [2] = "getgenv", -- x2
+            },
+        },
+        [29] = {
+            strings = {
+                [0] = "Instance", -- x8
+                [1] = "Vector2",
+                [2] = "UDim2", -- x9
+                [3] = "math", -- x4
+            },
+        },
+        [30] = {
+            strings = {
+                [0] = "UDim2",
+            },
+        },
+        [31] = {
+            strings = {
+                [0] = "UDim2",
+                [1] = "Enum", -- x2
+            },
+        },
+        [32] = {
+            strings = {
+                [0] = "UDim2", -- x2
+                [1] = "Instance", -- x3
+                [2] = "Enum", -- x5
+                [3] = "UDim",
+            },
+        },
+        [33] = {
+            strings = {
+                [0] = "Instance", -- x9
+                [1] = "", -- x4
+                [2] = "UDim2", -- x15
+                [3] = "Enum", -- x10
+                [4] = "Vector2", -- x3
+                [5] = "AnchorPoint",
+                [6] = "UDim",
+            },
+        },
+        [34] = {
+            strings = {
+                [0] = "", -- x3
+                [1] = "Enum", -- x7
+                [2] = "Instance", -- x8
+                [3] = "UDim2", -- x12
+                [4] = "OnyxKeyWindow",
+                [5] = "Padding",
+                [6] = "AnchorPoint",
+                [7] = "UDim",
+                [8] = "Vector2",
+                [9] = "KeyWindow",
+                [10] = "CurrentWindow",
+            },
+        },
+        [35] = {
+            strings = {
+                [0] = "WindowGeneration",
+            },
+        },
+        [37] = {
+            strings = {
+                [0] = ".txt",
+                [1] = "/",
+            },
+        },
+        [39] = {
+            strings = {
+                [0] = "Remember",
+            },
+        },
+        [41] = {
+            strings = {
+                [0] = "function",
+            },
+        },
+        [42] = {
+            strings = {
+                [0] = "Cleanups",
+            },
+        },
+        [43] = {
+            strings = {
+                [0] = "TextSize", -- x2
+                [1] = "Enum", -- x5
+                [2] = "OnyxKeylessWindow",
+                [3] = "UDim2", -- x7
+                [4] = "fromOffset",
+                [5] = "Connect", -- x2
+                [6] = "", -- x2
+                [7] = "Instance", -- x5
+                [8] = "Horizontal",
+                [9] = "HorizontalAlignment",
+                [10] = "MouseButton1Click",
+                [11] = "Size",
+                [12] = "Parent", -- x4
+                [13] = "Font",
+                [14] = "Primary",
+                [15] = "TextButton",
+                [16] = "KeylessWindow",
+                [17] = "CurrentWindow",
+                [18] = "TextXAlignment",
+            },
+        },
+        [45] = {
+            strings = {
+                [0] = "getgenv", -- x2
+                [1] = "KEYLESS",
+                [2] = "Access granted",
+            },
+        },
+        [47] = {
+            strings = {
+                [0] = "UDim2",
+                [1] = "Parent",
+                [2] = "Enum",
+            },
+        },
+        [48] = {
+            strings = {
+                [0] = "Notifications",
+                [1] = "UDim2",
+                [2] = "Enum",
+                [3] = "id",
+                [4] = "table",
+            },
+        },
+        [49] = {
+            strings = {
+                [0] = "Enum", -- x2
+            },
+        },
+        [50] = {
+            strings = {
+                [0] = "UserInputType",
+                [1] = "Enum", -- x2
+                [2] = "MouseMovement",
+                [3] = "Y",
+                [4] = "Position", -- x2
+                [5] = "UDim2",
+                [6] = "new",
+                [7] = "X",
+            },
+        },
+        [51] = {
+            strings = {
+                [0] = "UserInputType", -- x4
+                [1] = "Enum", -- x2
+                [2] = "Position", -- x2
+            },
+        },
+        [54] = {
+            strings = {
+                [0] = "game",
+                [1] = "https://raw.githubusercontent.com/sarahsophiesee-bot/SakuraUI/refs/heads/main/lucide-roblox.luau",
+            },
+        },
+        [55] = {
+            strings = {
+                [0] = "task",
+                [1] = "",
+                [2] = "getgenv", -- x3
+            },
+        },
+        [56] = {
+            strings = {
+                [0] = "NETWORK", -- x2
+                [1] = "getgenv", -- x5
+                [2] = "SessionGeneration",
+                [3] = "pcall", -- x4
+                [4] = "task", -- x5
+                [5] = "", -- x3
+                [6] = "Welcome back",
+                [7] = "ERROR", -- x2
+                [8] = "Junkie",
+                [9] = "Checking",
+                [10] = "Key validated",
+                [11] = "table", -- x2
+            },
+        },
+        [57] = {
+            strings = {
+                [0] = "new",
+            },
+        },
+        [59] = {
+            strings = {
+                [0] = "new",
+            },
+        },
+        [61] = {
+            strings = {
+                [0] = "new",
+            },
+        },
+        [62] = {
+            strings = {
+                [0] = "new",
+            },
+        },
+        [63] = {
+            strings = {
+                [0] = "Shop",
+                [1] = "Link",
+                [2] = "",
+            },
+        },
+        [64] = {
+            strings = {
+                [0] = "new",
+            },
+        },
+        [65] = {
+            strings = {
+                [0] = "new",
+                [1] = "BackgroundColor3",
+            },
+        },
+        [67] = {
+            strings = {
+                [0] = "TextColor3",
+            },
+        },
+        [68] = {
+            strings = {
+                [0] = "new",
+                [1] = "BackgroundColor3",
+            },
+        },
+        [69] = {
+            strings = {
+                [0] = "Closed",
+                [1] = "TextEditable",
+                [2] = "getgenv",
+            },
+            booleans = {
+                [0] = true,
+            },
+        },
+        [70] = {
+            strings = {
+                [0] = "Text",
+                [1] = "TextTransparency",
+                [2] = "TextEditable",
+                [3] = "new",
+            },
+        },
+        [71] = {
+            strings = {
+                [0] = "Verified",
+                [1] = "Text", -- x4
+                [2] = "TextColor3", -- x4
+                [3] = "TextDim",
+                [4] = "Hairline",
+                [5] = "Verifying…",
+            },
+        },
+        [72] = {
+            strings = {
+                [0] = "success", -- x2
+                [1] = "task", -- x4
+                [2] = "Active",
+                [3] = "error",
+                [4] = "", -- x4
+                [5] = "boolean",
+                [6] = "pcall",
+                [7] = "Validate", -- x2
+                [8] = "NETWORK", -- x2
+                [9] = "Network error",
+                [10] = "tostring",
+                [11] = "type",
+                [12] = "HWID_BANNED",
+                [13] = "ERROR", -- x2
+                [14] = "SERVICE_MISMATCH",
+                [15] = "Wrong service",
+                [16] = "getgenv", -- x2
+                [17] = "SCRIPT_KEY",
+                [18] = "verifying",
+                [19] = "Text",
+                [20] = "table",
+            },
+            booleans = {
+                [0] = false, -- x11
+                [1] = true, -- x8
+            },
+        },
+        [73] = {
+            strings = {
+                [0] = "",
+                [1] = "Link copied to clipboard",
+            },
+        },
+        [74] = {
+            strings = {
+                [0] = "new",
+                [1] = "BackgroundTransparency",
+                [2] = "Active",
+            },
+            booleans = {
+                [0] = false,
+            },
+        },
+        [75] = {
+            strings = {
+                [0] = "Create",
+                [1] = "new",
+                [2] = "BackgroundTransparency",
+            },
+        },
+        [76] = {
+            strings = {
+                [0] = "TextColor3",
+            },
+        },
+        [77] = {
+            strings = {
+                [0] = "focus",
+                [1] = "TextColor3",
+            },
+        },
+        [78] = {
+            strings = {
+                [0] = "type", -- x6
+                [1] = "readfile",
+                [2] = "function", -- x6
+            },
+        },
+        [79] = {
+            strings = {
+                [0] = "OnyxUI",
+            },
+        },
+        [81] = {
+            strings = {
+                [0] = "RBXScriptConnection",
+                [1] = "task",
+                [2] = "type", -- x2
+                [3] = "thread",
+                [4] = "function",
+            },
+        },
+        [82] = {
+            strings = {
+                [0] = "BackgroundTransparency",
+                [1] = "Play",
+                [2] = "Active",
+                [3] = "Create",
+                [4] = "TweenInfo",
+                [5] = "new",
+            },
+            booleans = {
+                [0] = false,
+            },
+        },
+        [83] = {
+            strings = {
+                [0] = "Active", -- x2
+                [1] = "getgenv",
+                [2] = "closeBtn",
+                [3] = "OnyxClosed",
+                [4] = "Closed",
+            },
+            booleans = {
+                [0] = false, -- x2
+                [1] = true, -- x2
+            },
+        },
+        [84] = {
+            strings = {
+                [0] = "Create",
+                [1] = "TweenInfo",
+                [2] = "new",
+                [3] = "BackgroundTransparency",
+                [4] = "Play",
+            },
+        },
+        [85] = {
+            strings = {
+                [0] = "Discord", -- x2
+                [1] = "Links",
+            },
+        },
+        [86] = {
+            strings = {
+                [0] = "OnyxUILoaded",
+                [1] = "Active", -- x2
+                [2] = "getgenv", -- x2
+                [3] = "SCRIPT_KEY",
+                [4] = "KEYLESS",
+                [5] = "Script loaded",
+                [6] = "success",
+                [7] = "closeBtn",
+            },
+            booleans = {
+                [0] = false, -- x3
+                [1] = true,
+            },
+        },
+        [88] = {
+            strings = {
+                [0] = "UserInputState",
+                [1] = "Enum",
+                [2] = "End",
+            },
+            booleans = {
+                [0] = false,
+            },
+        },
+        [90] = {
+            strings = {
+                [0] = "Links",
+            },
+        },
+        [93] = {
+            strings = {
+                [0] = "KEYLESS",
+            },
+        },
+        [94] = {
+            strings = {
+                [0] = "game",
+                [1] = "HttpGet",
+            },
+        },
+        [96] = {
+            strings = {
+                [0] = "Text", -- x2
+                [1] = "task",
+                [2] = "wait",
+                [3] = "TextColor3",
+                [4] = "string",
+                [5] = "idle",
+                [6] = "Too many attempts — wait %ds",
+            },
+            booleans = {
+                [0] = false,
+                [1] = true,
+            },
+        },
+        [98] = {
+            strings = {
+                [0] = "pcall",
+            },
+        },
+    },
+}
